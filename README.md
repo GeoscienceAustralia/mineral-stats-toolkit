@@ -32,25 +32,6 @@ Computes a cumulative distribution function for the distances to contour
 Plots a cumulative distribution function for deposits and random, and a "heat plot" as shown in Figure 2 of Kirkby et al. 2022 which shows the difference, D, between deposits and random (on the cdf plot) as a colour image as a function of depth and distance to contour.
 
 
-Reference
-
-Kirkby, A., Czarnota, K., Huston, D. Champion, D., Doublier, M., Bedrosian, P., Duan, J., Heinson, G., 2022. Lithospheric conductors reveal source regions of convergent margin mineral systems. Accepted (in press) with Scientific Reports.
-```
-
-## Input data
-
-The user needs to specify two input values:
-- target value (e.g. resistivity value) of interest to contour
-- number of repeats to run when computing the random locations
-
-The following input files are also required (see data folder):
-- a netCDF file containing a 3D numpy array containing values (dimensions m * n * o) and 1d arrays containing latitude (m), longitude (n) and depth (o). No data values denoted by nans in the numpy array.
-- a column-based text file with station locations
-- a point dataset (e.g. mineral deposit locations)
-- a .npy file (standard numpy binary format) containing random locations covering the same spatial area as the data in the netcdf file
-
-There are functions in the repository to convert a collection of ModEM format resistivity models to the netCDF format required, and to generate the random points.
-
 ## Output data
 
 The analysis generates three outputs:
