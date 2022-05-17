@@ -22,13 +22,13 @@ The example deposit dataset can be downloaded from the supplementary data of Kir
 In order to run the analysis, make some directories to contain inputs and outputs (e.g. C:/tmp/inputs and C:/tmp/outputs). Place the resistivity models (.rho files) and deposit dataset (the example uses Orogenic_gold.txt) in C:/tmp/inputs.
 
 The scripts should be run in the following order:
-### 1. create_inputs_from_modem.py
+#### 1. create_inputs_from_modem.py
 Creates a netcdf file with merged resistivity models (resmodels.nc), a station locations file (resmodels_sloc.txt) and randomly located points covering the area (within 0.7 degrees of latitude/longitude of a station) covered by the resistivity models
-### 2. run.py
+#### 2. run.py
 Creates .npy files containing the distance to the specified contour ('orogenic_gold_100ohmm_distance_array.npy') and size of each deposit ('Orogenic_gold_100ohmm_contained_resource.npy')
-### 3. compute_cdf.py
+#### 3. compute_cdf.py
 Computes a cumulative distribution function for the distances to contour
-### 4. plot_cdf.py
+#### 4. plot_cdf.py
 Plots a cumulative distribution function for deposits and random, and a "heat plot" as shown in Figure 2 of Kirkby et al. 2022 which shows the difference, D, between deposits and random (on the cdf plot) as a colour image as a function of depth and distance to contour.
 
 
@@ -42,8 +42,5 @@ The analysis generates three outputs:
 
 The key algorithms are demonstrated in the examples folder:
 create_inputs_from_modem.py generates a netCDF file from a collection of resistivity models, station locations file and .npy file with random locations
-run.py runs the analysis:
-- first, it computes the distance to contour
-- then, it computes CDFs for the random and true point locations.
-Visualisation tools are under development.
+run.py runs the analysis, by computing the distance to contour. compute_cdf.py then computes CDFs for the random and true point locations.
 
