@@ -2,7 +2,7 @@
 
 This repository contains the code to analyse the distance from point data to a contour in a geoscientific dataset, compared to a set of random locations, as described in Kirkby et al (in Review). Users of this repository are asked to cite Kirkby et al (in Review).
 
-Kirkby, A., Czarnota, K., Huston, D., Champion, D., Doublier, M., Bedrosian, P., Duan, J., Heinson, G. Lithospheric conductors reveal source regions of convergent margin mineral systems. In review with Scientific Reports
+Kirkby, A., Czarnota, K., Huston, D., Champion, D., Doublier, M., Bedrosian, P., Duan, J., Heinson, G., 2022. Lithospheric conductors reveal source regions of convergent margin mineral systems. Scientific Reports, 12, 8190, doi: https://doi.org/10.1038/s41598-022-11921-2
 
 ## Dependencies
 
